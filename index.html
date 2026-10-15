@@ -22,6 +22,7 @@
                 <a href="#vehicles">Vehicles</a>
                 <a href="#services">Services</a>
                 <a href="#booking">How to Book</a>
+                <a href="#request">Request</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -36,7 +37,7 @@
                 <p>Safe and comfortable car travel from Dokiparru to anywhere in India.</p>
                 <div>
                     <a href="tel:+918978892238" class="btn btn-call">Call Now</a>
-                    <a href="https://wa.me/918978892238" class="btn btn-whatsapp">WhatsApp Enquiry</a>
+                    <a href="https://wa.me/918978892238?text=Hi%20Kishore%20Car%20Travels%2C%20I%20want%20to%20enquire%20about%20a%20car%20trip." class="btn btn-whatsapp">WhatsApp Enquiry</a>
                 </div>
             </div>
             <div class="road"><span class="car">🚗</span></div>
@@ -104,7 +105,7 @@
             </div>
         </section>
 
-        <!-- SERVICE -->
+        <!-- SERVICES -->
         <section id="services" class="block">
             <div class="container">
                 <h2 class="section-title reveal">Our Services</h2>
@@ -119,60 +120,88 @@
             </div>
         </section>
 
-        <!-- HOW TO BOOK -->
+        <!-- HOW TO BOOK (timeline) -->
         <section id="booking" class="block alt">
             <div class="container">
                 <h2 class="section-title reveal">How to Book</h2>
-                <div class="grid">
-                    <div class="info-card tilt reveal"><span class="step">1</span><h3>Contact Us</h3><p>Call or send a WhatsApp message with your pickup place, drop place, date, and time.</p></div>
-                    <div class="info-card tilt reveal"><span class="step">2</span><h3>We Confirm</h3><p>We check the vehicle and tell you the price. Your booking is confirmed only after we approve it.</p></div>
-                    <div class="info-card tilt reveal"><span class="step">3</span><h3>Enjoy Your Ride</h3><p>Our driver arrives on time for your journey.</p></div>
-                </div>
+                <ol class="timeline">
+                    <li class="reveal">
+                        <span class="step">1</span>
+                        <div>
+                            <h3>Send Your Request</h3>
+                            <p>Call us, send a WhatsApp message, or fill the request form below.</p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <span class="step">2</span>
+                        <div>
+                            <h3>Share Trip Details</h3>
+                            <p>Pickup place, drop place, date, time, and the vehicle you want.</p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <span class="step">3</span>
+                        <div>
+                            <h3>We Check and Confirm</h3>
+                            <p>We check the vehicle and tell you the price. Your booking is confirmed only after we approve it.</p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <span class="step">4</span>
+                        <div>
+                            <h3>Enjoy Your Ride</h3>
+                            <p>Our driver arrives on time for your journey.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- CONTACT -->
-        <section id="contact" class="block">
-            <div class="container contact-box reveal">
-                <h2 class="section-title">Contact Us</h2>
-                <p>Location: Dokiparru</p>
-                <p>Book your ride by phone call or WhatsApp.</p>
-                <a href="tel:+918978892238" class="btn btn-call">Call Now</a>
-                <a href="https://wa.me/918978892238" class="btn btn-whatsapp">WhatsApp Enquiry</a>
-            </div>
-        </section>
         <!-- BOOKING REQUEST FORM -->
-        <section id="request" class="block alt">
+        <section id="request" class="block">
             <div class="container">
                 <h2 class="section-title reveal">Request a Booking</h2>
                 <form id="bookingForm" class="booking-form reveal">
-                    <label>Your Name
+                    <label>Your Name <span class="req">*</span>
                         <input type="text" id="name" required>
                     </label>
-                    <label>Pickup Place
+                    <label>Pickup Place <span class="req">*</span>
                         <input type="text" id="pickup" required>
                     </label>
-                    <label>Drop Place
+                    <label>Drop Place <span class="req">*</span>
                         <input type="text" id="drop" required>
                     </label>
-                    <label>Travel Date
+                    <label>Travel Date <span class="req">*</span>
                         <input type="date" id="date" required>
                     </label>
-                    <label>Pickup Time
+                    <label>Pickup Time <span class="req">*</span>
                         <input type="time" id="time" required>
                     </label>
-                    <label>Vehicle
-                        <select id="vehicle">
+                    <label>Vehicle <span class="req">*</span>
+                        <select id="vehicle" required>
                             <option>Suzuki Swift</option>
                             <option>Dzire</option>
                             <option>Ertiga</option>
                         </select>
                     </label>
+                    <p class="form-note"><span class="req">*</span> Required fields</p>
                     <button type="submit" class="btn btn-whatsapp">Send Request on WhatsApp</button>
                     <p class="form-note">This is a request only. Your booking is confirmed after we approve it.</p>
                 </form>
             </div>
         </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="block alt">
+            <div class="container contact-box reveal">
+                <h2 class="section-title">Contact Us</h2>
+                <p>Location: Dokiparru</p>
+                <p>Book your ride by phone call or WhatsApp.</p>
+                <a href="tel:+918978892238" class="btn btn-call">Call Now</a>
+                <a href="https://wa.me/918978892238?text=Hi%20Kishore%20Car%20Travels%2C%20I%20want%20to%20enquire%20about%20a%20car%20trip." class="btn btn-whatsapp">WhatsApp Enquiry</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>

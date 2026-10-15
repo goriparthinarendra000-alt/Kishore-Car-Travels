@@ -52,7 +52,8 @@ const watcher = new IntersectionObserver(function (entries) {
 items.forEach(function (item) {
     watcher.observe(item);
 });
-// 5. Booking form: build a WhatsApp message from the form
+
+// 5. Booking form: build a WhatsApp message from the form - NEW
 const form = document.getElementById("bookingForm");
 
 form.addEventListener("submit", function (event) {
