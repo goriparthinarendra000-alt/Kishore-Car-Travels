@@ -52,3 +52,28 @@ const watcher = new IntersectionObserver(function (entries) {
 items.forEach(function (item) {
     watcher.observe(item);
 });
+// 5. Booking form: build a WhatsApp message from the form
+const form = document.getElementById("bookingForm");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const pickup = document.getElementById("pickup").value.trim();
+    const drop = document.getElementById("drop").value.trim();
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const vehicle = document.getElementById("vehicle").value;
+
+    const message =
+        "Booking request\n" +
+        "Name: " + name + "\n" +
+        "Pickup: " + pickup + "\n" +
+        "Drop: " + drop + "\n" +
+        "Date: " + date + "\n" +
+        "Time: " + time + "\n" +
+        "Vehicle: " + vehicle;
+
+    const url = "https://wa.me/918978892238?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+});

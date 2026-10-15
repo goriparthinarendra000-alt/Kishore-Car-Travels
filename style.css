@@ -310,3 +310,38 @@ footer {
 
     .btn { display: block; max-width: 260px; margin: 10px auto; text-align: center; }
 }
+/* ===== BOOKING FORM ===== */
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--light);
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 14px;
+}
+.booking-form label {
+    display: grid;
+    gap: 4px;
+    font-weight: 600;
+    color: var(--main);
+}
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #c5cbd8;
+    border-radius: 8px;
+    font-family: inherit;
+}
+.booking-form .btn {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-note {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+}
